@@ -1,0 +1,81 @@
+.pane {
+    -fx-background-color: #3c626f;
+}
+
+.jfx-text-field {
+    -jfx-unfocus-color: linear-gradient(to right, #b3ff00, #3c626f);
+    -jfx-focus-color: linear-gradient(to right, #fcff00, #3c626f);
+    -fx-prompt-text-fill: #2189b1;
+}
+
+.jfx-password-field{
+    -jfx-unfocus-color: linear-gradient(to right, #b3ff00, #3c626f);
+    -jfx-focus-color: linear-gradient(to right, #fcff00, #3c626f);
+    -fx-prompt-text-fill: #2189b1;
+}
+
+.text-field{
+    -fx-background-color: #284250;
+    -fx-text-fill: #b3faff;
+}
+
+.jfx-button {
+    -fx-text-fill: #2189b1;
+    -fx-background-color: #63d4d6;
+}
+
+.uncolored-background {
+    -fx-background-color: transparent;
+    -fx-font: 14 System;
+}
+
+.tool-bar {
+    -fx-background-color: #3c626f;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-pref-width: 2px;
+    -fx-border-color: transparent #263f4c transparent #263f4c;
+    -fx-background-color: transparent, derive(#263f4c, 20%);
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.alert-field {
+    -fx-prompt-text-fill: red;
+}
+
+.alert-label {
+    -fx-text-fill: red;
+}
+
+.progress-indicator .percentage{
+    -fx-fill: null;
+}
+
+.progress-indicator{
+    -fx-padding: 0 0 -26 0;
+    -fx-progress-color: #31ffc0;
+}
+
+.un-focus-JFX{
+    -jfx-unfocus-color: transparent;
+    -jfx-focus-color: transparent;
+}
+
+.message{
+    -fx-background-size: 100%;
+    -fx-background-radius: 10;
+    -fx-border-width: 1;
+    -fx-border-color: null;
+}
+
+#search{
+    -fx-font: 8 System;
+}

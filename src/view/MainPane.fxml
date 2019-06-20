@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerMainPane">
+   <center>
+      <SplitPane dividerPositions="0.3" prefHeight="160.0" prefWidth="200.0" styleClass="pane" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <BorderPane prefHeight="200.0" prefWidth="200.0">
+            <center>
+               <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <content>
+                     <VBox fx:id="chatList" />
+                  </content>
+               </ScrollPane>
+            </center>
+            <top>
+               <HBox spacing="5.0" BorderPane.alignment="CENTER">
+                  <children>
+                     <JFXButton fx:id="setting" minHeight="40.0" minWidth="40.0" onAction="#settingClicked" prefHeight="40.0" prefWidth="40.0" styleClass="uncolored-background" />
+                     <TextField id="search-fld" fx:id="search" prefHeight="40.0" prefWidth="458.0" promptText="Search" />
+                     <JFXButton id="search" fx:id="btnSearch" layoutX="258.0" layoutY="20.0" minHeight="40.0" minWidth="40.0" onAction="#searchClicked" prefHeight="40.0" prefWidth="40.0" styleClass="uncolored-background" text="search" />
+                     <JFXButton fx:id="add" minHeight="40.0" minWidth="40.0" onAction="#addClicked" prefHeight="40.0" prefWidth="40.0" styleClass="uncolored-background" />
+                  </children>
+                  <padding>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+               </HBox>
+            </top>
+         </BorderPane>
+         <BorderPane fx:id="chatPane" prefHeight="200.0" prefWidth="200.0">
+            <top>
+               <HBox alignment="CENTER_LEFT" spacing="10.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+                  <children>
+                     <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+                     <VBox spacing="3.0">
+                        <padding>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                        <children>
+                           <Label fx:id="name" text="Choose a chat" textFill="#000000b5">
+                              <font>
+                                 <Font size="16.0" />
+                              </font>
+                           </Label>
+                           <Label fx:id="caption" />
+                        </children>
+                     </VBox>
+                  </children>
+                  <padding>
+                     <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+                  </padding>
+               </HBox>
+            </top>
+            <center>
+               <ScrollPane fx:id="scrollPaneChat" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                  <content>
+                     <VBox fx:id="messageList" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                        <padding>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                        </padding>
+                     </VBox>
+                  </content>
+               </ScrollPane>
+            </center></BorderPane>
+      </SplitPane>
+   </center>
+</BorderPane>

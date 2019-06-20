@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerChangeImage">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="30.0" styleClass="pane" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" />
+            <HBox spacing="5.0">
+               <children>
+                  <TextField prefHeight="31.0" prefWidth="283.0" promptText="Image" />
+                  <JFXButton fx:id="attachment" onAction="#attachmentClicked" styleClass="uncolored-background" />
+               </children>
+            </HBox>
+            <JFXButton onAction="#changeClicked" prefWidth="300.0" styleClass="uncolored-background" text="Change" />
+            <JFXButton onAction="#backClicked" prefWidth="300.0" styleClass="uncolored-background" text="Back" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

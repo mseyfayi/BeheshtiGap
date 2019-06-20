@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerNewPV">
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="400.0" spacing="30.0" styleClass="pane" stylesheets="@Style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Choose a user" />
+            <ScrollPane hbarPolicy="NEVER" prefHeight="1000.0">
+               <content>
+                  <VBox fx:id="list" prefWidth="340.0" />
+               </content></ScrollPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>

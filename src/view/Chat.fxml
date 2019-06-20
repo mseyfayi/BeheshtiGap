@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerChats">
+   <BorderPane>
+      <center>
+         <ScrollPane BorderPane.alignment="CENTER">
+            <VBox fx:id="messageList" prefWidth="200.0" />
+         </ScrollPane>
+      </center>
+   </BorderPane>
+</ScrollPane>
